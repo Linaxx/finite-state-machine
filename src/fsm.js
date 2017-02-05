@@ -110,7 +110,10 @@ class FSM {
     /**
      * Clears transition history
      */
-   
+    clearHistory() {
+        this._undo = [];
+        this._redo = [];
+    }
 }
 
 module.exports = FSM;
